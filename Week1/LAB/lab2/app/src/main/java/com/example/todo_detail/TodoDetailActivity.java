@@ -5,17 +5,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class TodoDetailActivity extends AppCompatActivity {
  // int currentindex =0
     private TextView textView;
     private String[] todo_description;
+    private Button backButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_todo_detail);
-        Intent intent = getIntent();
+        final Intent intent = getIntent();
         intent.getIntExtra(MainActivity.TodoIndex,0);
         textView = findViewById(R.id.textView);
         Resources res = getResources();
@@ -28,6 +31,16 @@ public class TodoDetailActivity extends AppCompatActivity {
         // textview.set textview ("CurrentIndex);
 
         textView.setText(todo_description[CurrentIndex]);
+
+
+//        backButton = (Button) findViewById(R.id.back);
+//        backButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(todo_description.this, MainActivity.class);
+//            }
+//      });
+
     }
 
 }

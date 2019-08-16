@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">ToDoApp</string>
+    <string name="next">Next</string>
+    <string name="textview">TextView</string>
+    <string name="prev">Prev</string>
+
+
+    <string-array name="todoapp">
+        <item>Wake Up</item>
+        <item>Drink</item>
+        <item>Eat</item>
+        <item>Internet</item>
+        <item>Sleep</item>
+        </string-array>
 </resources>

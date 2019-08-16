@@ -1,24 +1,29 @@
 package com.example.todo_detail;
 
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import static com.example.todo_detail.R.layout.activity_main;
 
+
 public class MainActivity extends AppCompatActivity {
 
     //private String[] tasks = {"Eat", "Sleep", "Code", "Repeat"};
     private String[] tasks;
     private TextView textView;
+    private Button detailButton;
+    public static String TodoIndex = "com.example.todo_detail";
     int currentIndex = 0;
 
-
+public  static  final String TODO_INDEX = "com.example.todoIndex";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +41,15 @@ public class MainActivity extends AppCompatActivity {
         Resources res = getResources();
         tasks = res.getStringArray(R.array.tasks);
         textView.setText(tasks[currentIndex]);
+        detailButton=(Button) findViewById(R.id.detail_button);
+        detailButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,TodoDetailActivity.class);
+                intent.putExtra(TodoIndex,currentIndex);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

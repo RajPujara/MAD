@@ -10,5 +10,12 @@
         <item>Code2</item>
         <item>Repeat2</item>
     </string-array>
+    <string-array name="todo_description">
+        <item>Wake up at 6 an</item>
+        <item>Drink Coffee in office</item>
+        <item>Plant a tree an environment day</item>
+        <item>Ponder on duality of existance</item>
+        <item>Go to sleep at 10pm</item>
+    </string-array>
 
 </resources>

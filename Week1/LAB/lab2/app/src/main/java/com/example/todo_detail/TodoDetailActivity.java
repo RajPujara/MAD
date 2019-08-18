@@ -9,17 +9,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import static com.example.todo_detail.MainActivity.TodoIndex;
+
 public class TodoDetailActivity extends AppCompatActivity {
  // int currentindex =0
     private TextView textView;
     private String[] todo_description;
     private Button backButton;
+    //int currentIndex =0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_todo_detail);
         final Intent intent = getIntent();
-        intent.getIntExtra(MainActivity.TodoIndex,0);
+        intent.getIntExtra(TodoIndex,0);
         textView = findViewById(R.id.textView);
         Resources res = getResources();
         todo_description = res.getStringArray(R.array.todo_description);
@@ -37,7 +40,9 @@ public class TodoDetailActivity extends AppCompatActivity {
 //        backButton.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-//                Intent intent = new Intent(todo_description.this, MainActivity.class);
+//                Intent intent = new Intent(String.valueOf(MainActivity.class));
+//                intent.putExtra(TodoIndex,currentIndex);
+//                startActivity(intent);
 //            }
 //      });
 

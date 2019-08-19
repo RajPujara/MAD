@@ -7,6 +7,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 import static com.example.todo_detail.MainActivity.TodoIndex;
@@ -15,7 +16,7 @@ public class TodoDetailActivity extends AppCompatActivity {
  // int currentindex =0
     private TextView textView;
     private String[] todo_description;
-    private Button backButton;
+   // private Button backButton;
     //int currentIndex =0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,22 @@ public class TodoDetailActivity extends AppCompatActivity {
 //            }
 //      });
 
+        CheckBox checkboxiscomplete = findViewById(R.id.checkboxiscomplete);
+        checkboxiscomplete.setOnClickListener(mtodolistner);
+
     }
+    private void view.OnClickListener mtodolistner = new view.onClickListener(){
+        public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.checkboxiscomplete:
+                    CheckBox checkboxiscomplete = (CheckBox)findViewById(R.id.checkboxiscomplete);
+                    setIsComplete(checkboxiscomplete.isChecked());
+                    finish();
+                    break;
+                default:
+                    break;
+            }
+        }
+    };
 
 }

@@ -1,0 +1,4 @@
+#Sun Aug 18 19:41:13 NPT 2019
+base.0=C\:\\Users\\USER\\DMA\\week1\\lab1\\ScrollingText\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\9
+path.0=classes.dex
+renamed.0=classes.dex

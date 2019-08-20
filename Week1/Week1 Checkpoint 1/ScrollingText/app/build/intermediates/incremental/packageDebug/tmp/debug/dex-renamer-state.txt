@@ -1,4 +1,0 @@
-#Mon Aug 19 07:12:05 NPT 2019
-base.0=C\:\\Users\\USER\\DMA\\week1\\lab1\\ScrollingText\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
-path.0=classes.dex
-renamed.0=classes.dex

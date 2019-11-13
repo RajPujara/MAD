@@ -1,9 +1,9 @@
 # Todo_App
-This is an android simple app including basic features, that helps to build a todo list. Adding new task, Editing and Deleting an existing items are its basic featutes. Another extra features of this application is login form, when the user enter correct username and password then it opend othewise it will show error message.
+This is an android simple app including basic features that helps to build a to-do list. Adding new task, Editing and Deleting an existing items are its basic features. Another extra features of this application is login form, when the user enter correct username and password then it opened otherwise it will show error message.
 
 # Features
 1. User must login first, entering correct username and password
-2. User can choose the task prority(High, Medim or Low).
+2. User can choose the task priority (High, Medium or Low).
 3. User can add new items
 4. User can update and delete existing items.
 5. Added date shows
